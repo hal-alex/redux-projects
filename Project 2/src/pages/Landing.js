@@ -1,19 +1,13 @@
-import main from "../assets/images/main.svg"
-import styled from "styled-components"
+import main from "../assets/images/main.jpg"
 import Logo from "../assets/images/logo.svg"
 import { Link } from "react-router-dom"
-
-const Wrapper = styled.main`
-  nav {
-    width: var(--fl);
-  }
-`
+import Wrapper from "../assets/wrappers/LandingPage"
 
 const Landing = () => {
   return (
-    <>
+    <Wrapper>
       <nav>
-        <Logo />
+        <img src={Logo} />
       </nav>
       <div className="container page">
         {/* info */}
@@ -38,7 +32,7 @@ const Landing = () => {
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
-    </>
+    </Wrapper>
   )
 }
 
